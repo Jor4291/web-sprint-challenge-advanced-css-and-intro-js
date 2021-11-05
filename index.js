@@ -1,3 +1,5 @@
+const { assertNumericLiteral } = require("@babel/types");
+
 const artists = [
   {
     "id": 0,
@@ -300,12 +302,21 @@ Use addArtist to do the following:
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
 function addArtist(array) {
-  /*Your Code Here*/
+  const info = {'id': 20,
+  'name': 'James Robertson', 
+  'years': '1991-2174',
+  'genre': 'Web Design', 
+  'nationality': 'United States of America',
+  'bio': 'Born in Mobile, Alabama. Went to the University of South Alabama but deffered in his sophmore year to play in an indie rock band. Toured around the southeast but eventually band drama caused the group to dissolve. Now older and wiser he enjoys simpler times with his beloved family and pursuing a career he can be proud of!'};
+
+  array.push(info)
+    
+    return array;
 }
 
-// definitely going to use some .unshift or .push I need to check which adds to the end
 
 
+console.log('task 6: ', addArtist(artists));
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
 1. Receive an array 
