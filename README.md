@@ -22,11 +22,33 @@ Commit your code regularly and meaningfully.
 
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
-1. How would you describe acessibility on the web to someone new to programming?
+1. How would you describe accessibility on the web to someone new to programming?
+        
+        Accessibility is the ability for all persons to enjoy your web page regardless of who they are or what conditions or challenges they may face.
+
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+       1.) Always make sure you fill out your "ref" tags when using an Image. This will allow vision impaired users to understand and enjoy the content you are providing with a screen-reader while also displaying useful information if the image is broken.
+
+       2.) Use palates that utilize colors that are conscience of colorblindness and eye strain. This will improve the functionality and comfort for the users.
+
+       3.) Make sure to use media tags to allow users to enjoy the content through multiple varied devices ensuring more users a positive experience, inherently increasing the value of your content.
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+        Variables are where we can stored data that we can access later to do what we need them to. Kind of like a lego piece that can be called upon an infinite amount of times when we need it. Used together with other aspects of programing you can build incredible things!
+
+
 4. What is the purpose of using functions in code?
+
+    Functions can be made to preform a certain task. They are designed to be able to be reused and applied as needed. They help keep code DRY and save time.
+
 5. How do you access a key inside of an object inside of an array?
+
+    array[object].key
+
+    Array will be the variable of whatever the array is named. Inside the block notation is the index of the object we want to target. The ".key" targets the key value pair at the index you targeted in the block notation. 
+
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -37,7 +59,7 @@ You are expected to be able to answer questions in these areas. Your responses c
 Follow these steps to set up your project:
 
 1. Fork the repo
-2. Go into canvas and connect your reop to codegrade
+2. Go into canvas and connect your repo to codegrade
 3. Clone your forked version of the repo
 4. DO NOT CREATE A BRANCH. You will be pushing your changes to the main/master today
 NOTE: tests will run in the JavaScript portion of this challenge only.
