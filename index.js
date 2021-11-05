@@ -252,13 +252,13 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
-function get20s(array) {
+function get20s(array){
 
-  const filtered = [];
+  let filtered = [];
 
   for(let i = 0; i < array.length; i++){
-    if(array[i].years <= 2000 && array[i].years >=1900){
-      filtered.push(array[i]);
+    if(array[i].years <= "2000" && array[i].years >='1900'){
+      filtered.push(array[i].name);
       }
     }
   
@@ -316,7 +316,7 @@ function addArtist(array) {
 
 
 
-console.log('task 6: ', addArtist(artists));
+// console.log('task 6: ', addArtist(artists));
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
 1. Receive an array 
@@ -325,8 +325,21 @@ Use lotsOfArt to do the following:
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
 function lotsOfArt(array) {
-  /*Your Code Here*/
+  
+let filtered = [];
+
+for(let i = 0; i < array.length; i++){
+  if(array[i].paintings>= 100){
+    filtered.push(array[i].name);
+    
+  } 
+  }
+  return filtered;
 }
+
+
+
+// console.log('task 7: ', lotsOfArt(artists));
 
 
 /* ***** END OF TASKS ***** */
